@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام أبو محمد الأعمش </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام أبو محمد الأعمش </div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">روى عن</button>
+    <button onclick="show('s3')">روى عنه</button>
+    <button onclick="show('s4')">مكانته العلمية</button>
+    <button onclick="show('s5')">زهده وعبادته</button>
+    <button onclick="show('s6')">وفاته</button>
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>روى عن</span><div id="c2" class="circle"></div>
+    <span>روى عنه</span><div id="c3" class="circle"></div>
+    <span>مكانته العلمية</span><div id="c4" class="circle"></div>
+    <span>زهده وعبادته</span><div id="c5" class="circle"></div>
+    <span> وفاته</span><div id="c6" class="circle"></div>
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+أبو محمد سُليمان بن مِهرَان الأعمش الأسدي الكاهلي(10 محرم 61 هــ - 148 هــ) قدم أهله به إلى الكوفة طفلاً، حيث قدم والده مهران من الري إلى الكوفة سنة 61 هـ، ودخل في ولاء بني كاهل، وقيل بل كانت أمه حاملاً به وولدته في الكوفة، تعرض لمرض في عينيه في صغره، وجراء ذلك أصابه العمش، وهو ضعف في البصر مع سيلان دمع. فاشتهر بهذا اللقب فيما بعد (الأعمش)
+
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">روى عن</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+أنس بن مالك، وعبدالله بن أبي أوفي، وأبي وائل شقيق بن سلمة، وزيد بن وهب، وأبي عمرو الشيباني، وإبراهيم النخعي، وسعيد بن جبير، وأبي ظبيان السمان، ومجاهد بن جبر، وأبي ظبيان الأعرج، وخيثمة بن عبدالرحمن، و زر بن حبيش، وعبد الرحمن بن أبي ليلى، وكميل بن زياد، والمعرور بن سويد، والوليد بن عبادة بن الصامت، وتميم بن سلمة، وسالم بن أبي الجعد، وعبد الله بن مرة الهمداني، وعمارة بن عمير الليثي، وقيس بن أبي حازم، ومحمد بن عبد الرحمن بن يزيد النخعي، وهلال بن يساف، وأبي حازم الأشجعي، وأبي العالية الرياحي، وإسماعيل بن رجاء، وثابت بن عبيد، وأبي بشر جعفر بن أبي وحشية، وحبيب بن أبي ثابت، والحكم بن عتيبة، وذر بن عبد الله، وزياد بن الحصين، وسعيد بن عبيدة، وعامر الشعبي، والمنهال بن عمرو، وأبي سبرة النخعي، وأبي السفر الهمداني، وعمر بن مرة، ويحيى بن وثاب، وعبدالملك بن عمير، ومعبد بن خالد، وخلق كثير من التابعين
+
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">روى عنه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+الحكم بن عتيبة وهو من شيوخه، وأبو إسحاق السبيعي، وطلحة بن مصرف، وحبيب بن أبي ثابت، وعاصم بن أبي النجود، وأيوب السختياني، وزيد بن أسلم، وصفوان بن سليم، وسهيل بن أبي صالح، وأبان بن تغلب، وخالد الحذاء، وسليمان التيمي، وإسماعيل بن أبي خالد، وهم كلهم من أقرانه، وأبو حنيفة النعمان، والأوزاعي، وسعيد بن أبي عروبة، وابن إسحاق، وشعبة بن الحجاج، ومعمر بن راشد، وسفيان الثوري، وشيبان النحوي، وجرير بن حازم، وزائدة بن قدامة، وجرير بن عبد الحميد، وأبو معاوية، وحفص بن غياث، وعبد الله بن إدريس، وعلي بن مسهر، ووكيع بن الجراح، وأبو أسامة حماد بن أسامة، وسفيان بن عيينة، وأحمد بن بشير، وإسحاق بن يوسف الأزرق، وسعد بن الصلت، وعبدالله بن نمير، وعبدالرحمن بن مغراء، وعثام بن علي، ويحيى بن سعيد الأموي، ويحيى بن سعيد القطان، ويونس بن بكير، ويعلى بن عبيد وجعفر بن عون، وعبد الله بن داود الخريبي، وعبيد الله بن موسى، وأبو نعيم الفضل بن دكين، وابن كناسة، وخلق كثير، آخرهم وفاة يحيى بن هاشم السمسار.
+
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title">مكانته العلمية</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<p> تابعي من حفاظ الحديث النبوي، ومُحدث من الثقات، لقبه شمس الدين الذهبي بـ(شيخ الـمُحدثين)، وعده أصحاب الطبقات من الطبقة الرابعة من التابعين. وعاش الأعمش في الكوفة، وكان محدثها في زمانه.  </p>
+<h5> منزلته عند أهل الجرح والتعديل:  </h5>
+<p> قال علي بن المديني: له نحوٌ من ألف وثلاثمائة حديث </p>
+<p> قال أبو بكر بن عياش: كنا نسمي الأعمش سيد المحدثين. </p>
+<p> وقال أحمد بن عبد الله العجلي: الأعمش ثقة ثبت، كان محدث الكوفة في زمانه. </p>
+<p> وقال أحمد بن حنبل: أبو إسحاق والأعمش رحلا أهل الكوفة. </p>
+<p>  وقال شعبة بن الحجاج: ما شفاني أحد في الحديث ما شفاني الأعمش.</p>
+<p> قال يحيى بن معين: كلما روى الأعمش عن أنس مرسل </p>
+<p> وقال أبو حاتم الرازي: لم يسمع من ابن أوفي ولا من عكرمة </p>
+<p> وقال علي بن المديني: حفظ العلم على أمة محمد ﷺ ستة: عمرو بن دينار بمكة، والزهري بالمدينة، وأبو إسحاق السبيعي والأعمش بالكوفة، وقتادة ويحيى بن أبي كثير بالبصرة.
+
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+<div id="s5" class="section">
+    <div class="title">زهده وعبادته</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<p>كان الأعمش من النساك، وكان محافظاً على الصلاة في الجماعة، وعلى الصف الأول، وظل سبعين سنةً لم تفُته التكبيرة الأولى من صلاة الجماعة
+</p>
+<p>قال عبدالله الخريبي: ما خلف الأعمش أعبد منه.
+</p>
+<p>قال عيسى بن يونس: لم نر نحن مثل الأعمش، وما رأيت الأغنياء عند أحد أحقر منهم عنده مع فقره وحاجته.
+<p>قال الذهبي: كان عزيز النفس، قنوعاً، وله رزق على بيت المال، في الشهر خمسة دنانير قررت له في أواخر عمره.
+     </p>
+<p>وكان عزيز النفس لا يحب مجالسة الأمراء، أرسل له مرةً الأمير عيسى بن موسى بألف درهم وصحيفة ليكتب فيها حديثا، فكتب فيها: ((بسم الله الرحمن الرحيم وقل هو الله أحد))، ووجه بها إليه، فبعث إليه: (( يا ابن الفاعلة، ظننت أني لا أحسن كتاب الله؟)) فبعث إليه: (( أظننت أني أبيع الحديث؟)) وكان يقول: (( إن الله يرفع بالعلم أو بالقرآن أقوامًا، ويضع به آخرين، وأنا ممن يرفعني الله به، لولا ذلك لكان على عنقي دنٌ صحنًا أطوف به في سكك الكوفة))
+
+
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title">وفاته </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        توفي الأعمش سنة ثمانٍ وأربعين ومائةٍ، وهو ابن ثمانٍ وثمانين سنةً، ورُى أن أبا بكر بن عياش دخل عليه في مرضه الذي توفي فيه فقال: ( أدعو لك طبيبًا) فقال: ( ما أصنع به فوالله لو كانت نفسي في يدي لطرحتها في الحش إذا أنا مت فلا تؤذنن بي أحدًا واذهب بي فاطرحني في لحدي) وذكره ابن كثير في البداية والنهاية في وفيات ربيع الأول سنة ثمان وأربعين ومائة، بينما ذكر الخطيب البغدادي في تاريخ بغداد وفاته في 149 هــ، وقال:( مات سنة تسع وأربعين ومائة وكان ثقة ثبتا في الحديث)
+    </div>
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

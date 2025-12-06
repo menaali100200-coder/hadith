@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title> الإمام عمرو بن دينار</title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام عمرو بن دينار</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">شيوخه</button>
+    <button onclick="show('s3')">طلابه</button>
+    <button onclick="show('s4')">مناقبه</button>
+    <button onclick="show('s5')">صفاته وأخلاقه</button>
+    <button onclick="show('s6')">روايته وطريقته في التحديث</button>
+    <button onclick="show('s7')">فقهه ومذهبه</button>
+    <button onclick="show('s8')">أقواله المشهورة</button>
+        <button onclick="show('s9')">وفاته</button>
+
+
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>شيوخه</span><div id="c2" class="circle"></div>
+    <span>طلابه</span><div id="c3" class="circle"></div>
+    <span>مناقبه</span><div id="c4" class="circle"></div>
+    <span>صفاته وأخلاقه</span><div id="c5" class="circle"></div>
+    <span>روايته وطريقته في التحديث</span><div id="c6" class="circle"></div>
+    <span>فقهه ومذهبه</span><div id="c7" class="circle"></div>
+        <span> أقواله المشهورة</span><div id="c8" class="circle"></div>
+                <span>  وفاته</span><div id="c9" class="circle"></div>
+
+
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        هو أبو محمد، عمرو بن دينار بن عمرو الجمحي المكي، مولى بني جمح من قريش.
+كان من موالي قريش، لكنه صار من كبار علمائهم وأئمتهم ومن أعلام التابعين في مكة.
+ولد سنة 46 هـ تقريبًا (وقيل قبل ذلك بقليل).
+نشأ في مكة، في بيئة علمية؛ وكان يلازم حلقات العلماء من صغره، حتى لمع اسمه وأصبح أحد أعلام الحرم.
+
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">شيوخه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <h5>روى عن عدد كبير من الصحابة رضي الله عنهم، ومن أشهرهم:</h5>
+        <ol>من الصحابة المباشرين:<ol>
+        <li>عبد الله بن عباس</li>
+        <li>عبد الله بن عمر</li>
+        <li>جابر بن عبد الله</li>
+        <li>أنس بن مالك</li>
+        <li>أبو هريرة</li>
+        <li>أبو سعيد الخدري</li>
+        <li>عبد الله بن الزبير</li>
+        <li>عائشة رضي الله عنها (مرسلاً)</li>
+<ol>من كبار التابعين:
+<li>سعيد بن جبير</li>
+<li>عطاء بن أبي رباح</li>
+<li>طاووس بن كيسان</li>
+<li>مجاهد بن جبر</li>
+<li>محمد بن علي بن الحنفية</li>
+
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">طلابه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <p>من عِظمة علمه أن كبار الأئمة صاروا تلاميذه، مثل:</p>
+        سفيان بن عيينة، سفيان الثوري، شعبة بن الحجاج، ابن جريج، الأوزاعي، عبدالله بن المبارك، حماد بن زيد، وكيع بن الجراح
+        <p>هؤلاء أئمة الدنيا في الحديث، وكلهم أخذوا عنه، وهذا من دلائل إمامته.</p>
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title">مناقبه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <p>قال الإمام أحمد: "ثقة، ثبت في الحديث".</p>
+        <p>قال ابن معين: "ثقة مأمون".</p>
+        <p>قال العجلي: "مكي ثقة ثبت".</p>
+        <p>قال الذهبي: "الإمام، الحافظ، شيخ الحرم".</p>
+        <p>وقال ابن سعد: "كان ثقة كثير الحديث، يجلس في المسجد الحرام".</p>
+        <p>قال شعبة بن الحجاج:
+"ما رأيت أفقه من عمرو بن دينار."
+</p>
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+<div id="s5" class="section">
+    <div class="title">صفاته وأخلاقه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        كان قليل الكلام، شديد التحري في الرواية.
+صاحب ورع وزهد، وكان يُعرف بالعبادة والقيام.
+شديد الحرص على السنة، ومنكر للبدع.
+لم يكن يجامل في الحق، وكان يُعلي قيمة العلم.
+وكان يُعرف بقوّة الشخصية وهيبة العلم؛ حتى قالوا:
+"كان لا يقبل الحديث إلا من رجلين: من حافظ أو صاحب كتاب."
+
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title">روايته وطريقته في التحديث </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <h5>روايته للحديث</h5>
+        حديثه في الصحيحين والبخاري ومسلم يخرجون له كثيرًا.
+وهو من أوثق رجال الإسناد المكي.
+وكان من أشدّ الناس تثبتًا؛ حتى قال سفيان الثوري:
+"كان عمرو بن دينار جبلًا من الجبال في الحديث."
+<h5>طريقته في التحديث</h5>
+كان لا يحدّث إلا بما يتيقّن أنه سمعه.
+إذا شكّ في كلمة سكت عنها.
+وكان إذا حدّث في الحرم، التف حوله كبار العلماء، يسمعون ويكتبون.
+وقد اشتهر عنه قوله:
+"ما حدّثتكم شيئًا إلا وأنا أريد أن أُسأل عنه يوم القيامة."
+
+    </div>
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+<div id="s7" class="section">
+    <div class="title">فقهه ومذهبه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        كان من أكابر فقهاء مكة بعد ابن عباس وعطاء.
+يُعدّ أحد مؤسسي مدرسة الفقه المكي المعروفة بالاعتماد على الآثار.
+تميز بفقهٍ قائم على:
+آثار الصحابة
+فهم التابعين
+عمل أهل مكة
+قلة القياس إلا عند الحاجة
+وقد نقل عنه ابن جريج كثيرًا من مسائل الفقه وأقواله في العبادات والمعاملات.
+
+    </div>
+    <button class="doneBtn" onclick="mark(7)">أتممت القراءة</button>
+</div>
+
+
+<div id="s8" class="section">
+    <div class="title">أقواله المشهورة</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        من حكمه المشهورة:
+"العلم رحمٌ بين أهله."
+
+"ما من شيءٍ أفضل من العلم لمن عقل."
+وكان يقول عن طلب العلم: "لا يُنال العلم براحة الجسد."
+
+    </div>
+    <button class="doneBtn" onclick="mark(8)">أتممت القراءة</button>
+</div>
+
+
+<div id="s9" class="section">
+    <div class="title">وفاته</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        توفي –رحمه الله– سنة 126 هـ، وقيل سنة 119 هـ.
+ومات بمكة حيث عاش ودرّس وعلّم.
+
+وقد حزن عليه أهل مكة، وشيّعه العلماء والطلاب، وفُقد بفقده إمامٌ كبيرٌ من أئمة التابعين.
+
+    </div>
+    <button class="doneBtn" onclick="mark(9)">أتممت القراءة</button>
+</div>
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

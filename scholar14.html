@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام الليث بن سعد
+     </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+/* حل مشكلة الـ pre */
+.contentText pre {
+    white-space: pre-wrap;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* تأكد أن الدوائر تظهر */
+.circle.active {
+    background: #7a5c32 !important;
+}
+</style>
+</head>
+<body>
+
+<div class="header"> 
+    الإمام الليث بن سعد
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">علمه وشيوخه
+
+    </button>
+    <button onclick="show('s3')">مكانته وخصائصه
+
+    </button>
+    <button onclick="show('s4')">زهده وخلقه
+
+    </button>
+    <button onclick="show('s5')">أثره العلمي
+
+    </button>
+    <button onclick="show('s6')">خاتمة
+
+    </button>
+    
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span> علمه وشيوخه
+
+    </span><div id="c2" class="circle"></div>
+    <span>مكانته وخصائصه
+
+    </span><div id="c3" class="circle"></div>
+    <span>زهده وخلقه
+
+    </span><div id="c4" class="circle"></div>
+    <span>أثره العلمي
+
+    </span><div id="c5" class="circle"></div>
+    <span>خاتمة
+    </span><div id="c6" class="circle"></div>
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+الليث بن سعد (94–175هـ)
+إمام أهل مصر، شيخ الإسلام وعالمها وفقيهها ومحدثها، وُلد بقرقشندة، وأصله من الفرس من أصبهان.
+
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">علمه وشيوخه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+تتلمذ على كبار التابعين مثل ابن شهاب الزهري، عطاء بن أبي رباح، نافع مولى ابن عمر، يزيد بن أبي حبيب وغيرهم، وروى عنه الأئمة ابن وهب، ابن المبارك، القعنبي، قتيبة بن سعيد وغيرهم.
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">مكانته وخصائصه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+كان فقيهًا محدثًا لغويًا حافظًا، جامعًا بين العلم والعمل والورع.
+قال يحيى بن بكير: ما رأيت أحدًا أكمل من الليث.
+وقال ابن وهب: لولا مالك والليث لهلك الناس.
+كان أعلم من مالك في بعض الأبواب عند من عرفهما من أهل مصر.
+عرض عليه المنصور ولاية مصر فاستعفى تواضعًا وورعًا.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title"> زهده وخلقه
+</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+قال: بلغت الثمانين وما نازعت صاحب هوى قط.
+عُرف بالسخاء والهيبة والورع، حتى كان حكام مصر يرجعون إلى رأيه.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+<div id="s5" class="section">
+    <div class="title">أثره العلمي
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+كان إمامًا مجتهدًا مستقلاً له مذهب متكامل في الفقه.
+ضاعت مصنفاته ولم يُقم مذهبه طلابه، فلم ينتشر مذهبه كغيره من الأئمة، رغم أنه كان في مرتبهم علمًا وفقهًا.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title"> خاتمة
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+الليث بن سعد إمام مجتهد واسع العلم، عظيم الورع، رأس أهل مصر في الفقه والحديث، امتاز بأن فقهه كان ناضجًا ومذهبه متكاملًا، لكن لم يقيّده طلابه فاندثر مذهبه، فبقي ذكره إمامًا بلا مذهب، وعلَمًا على سعة العلم والإخلاص.
+    </div>
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

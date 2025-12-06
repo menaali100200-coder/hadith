@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title> الإمام يونس بن يزيد   </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">  الإمام يونس بن يزيد الأيلي </div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">روى عن</button>
+    <button onclick="show('s3')">روى عنه</button>
+    <button onclick="show('s4')">أقوال العلماء </button>
+    <button onclick="show('s5')">وفاته </button>
+   
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>روى عن</span><div id="c2" class="circle"></div>
+    <span>روى عنه</span><div id="c3" class="circle"></div>
+    <span>أقوال العلماء</span><div id="c4" class="circle"></div>
+    <span>وفاته</span><div id="c5" class="circle"></div>
+
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه</div>
+
+    <div class="contentText"><!-- اكتبي هنا -->يونس بن يزيد بن أَبي النجاد، ويُقال: يونس ابن يزيد بن مشكان بن أَبي النجاد الأيلي، أبو يزيد القرشي، مولى معاوية بن أَبي سفيان، وهو أخو أَبِي علي بن يزيد، وهم عنبسة بن خالد بن يزيد.
+</div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">روى عن</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+إبراهيم بن أَبي عبلة المقدسي، والحكم بن عبدالله بن سعد الأيلي، وعكرمة مولى ابن عباس، وعمارة بن غزية، وعمر بن عبدالله مولى غفرة، وعِمران بن أَبي أَنس، والقاسم بن محمد بن أَبي بكر الصديق، ومحمد بن مسلم بن شهاب الزهري، ونافع مولى ابن عمر، وهشام ابن عروة، وأخيه أَبي علي بن يزيد الأيلي
+
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">روى عنه</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+أبو ضمرة أنس بن عياض الليثي، وأيوب بن سويد الرملي، وبقية بن الوليد، وبهلول بن راشد، وجرير بن حازم، وحسان بن إبراهيم الكرماني وحفص بن عمر الدمشقي، ورشدين بن سعد، وسُليمان بن بلال، وشبيب بن سعيد الحبطي، وأبو شعبة صدقة بن المنتصر الشعباني، وطلحة بن يحيى الزرقي، وعبدالله بن الحارث المخزومي، وعبد الله بن رجاء المكي، وأبو صفوان عبدالله بن سعيد الأموي، وعبدالله بن عمر النميري، وعبدالله بن المبارك، وعبدالله بن وهب، وعبدالرحمن بن عمرو الأوزاعي، وعثمان بن الحكم الجذامي، وعثمان بن عمر بن فارس، وعلي بن عروة الدمشقي، وعمرو بن الحارث المصري ومات قبله، وابن أخيه عنبسة بن خالد بن يزيد الأيلي، والقاسم بن مبرور، والليث بن سعد، ومحمد بن بكر البرساني، ومحمد بن فليح بن سُليمان، والمفضل بن فضالة، وموسى بن شيبة الحضرمي، ونافع بن يزيد المِصري، ويزيد بن محمد الأيلي ويونس بن سليم الصنعاني، وأبو عبدالله العذري
+
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title">أقوال العلماء </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<p>صحب الزهري ثنتي عشرة سنة، وقيل أربع عشرة سنة. وقال ذات يومٍ مخاطبا له: يا يونس لا تكابر العلم، فإن العلم أودية، فأيها أخذ فيه قطع بك قبل أن تبلغه، ولكن خذه مع الأيام والليالي، ولا تأخذ العلم جملة، فإن من رام أخذه جملة ذهب عنه جملة، ولكن الشيء بعد الشيء مع الأيام والليالي. </p>
+<p>وقال علي ابن المديني: سألت عبد الرحمن بن مهدي عن يونس بن يزيد، فقال: كان ابن المبارك يقول: كتابه صحيح. قال ابن مهدي: وأنا أقول: كتابه صحيح.</p>
+<p>وقال عبدان، عن ابن المبارك: إني إذا نظرت في حديث معمر ويونس يعجبني كأنهما خرجا من مشكاة واحدة.</p>
+<p> وقال عبد الرزاق، عن ابن المبارك: ما رأيت أحدا أروى للزهري من معمر إلا أن يونس أحفظ للمسند وفي رواية: إلا ما كان من يونس، فإنه كتب الكتب على الوجه.</p>
+<p> وقال محمد بن عوف، عن أحمد بن حنبل: قال وكيع: رأيت يونس بن يزيد الأيلي وكان سيء الحفظ. قال أحمد: سمع منه وكيع ثلاثة أحاديث.</p>
+<p> وقال حنبل بن إسحاق: سمعت أبا عبدالله يقول: ما أحد أعلم بحديثه يعني الزهري من معمر إلا ما كان من يونس الأيلي فإنه كتب كل شيء هناك.</p>
+<p>وقال أبو زرعة الدمشقي: سمعت أبا عبدالله أحمد بن حنبل يقول: في حديث يونس بن يزيد منكرات عن الزهري، منها: عن سالم عن أبيه، عن النبي ﷺ: فيما سقت السماء العشر. </p>
+<p> وقال أبو الحسن الميموني: سئل أحمد بن حنبل: من أثبت في الزهري؟ قال: معمر، قيل له: فيونس؟ قال: روى أحاديث منكرة.</p>
+<p> وقال محمد بن عبدالله بن عمار الموصلي: مالك وسفيان ومعمر، هؤلاء أصحاب الزهري، ويونس بن يزيد عارف برأيه.</p>
+<p> وقال العجلي، والنسائي: ثقة.</p>
+<p> وقال يعقوب بن شيبة: صالح الحديث، عالم بحديث الزهري.</p>
+<p> وقال أبو زرعة: لا بأس به.</p>
+<p> وقال ابن خراش: صدوق.</p>
+<p> وقال محمد بن سعد: كان حلو الحديث، كثيره، وليس بحجة، ربما جاء بالشيء المنكر.</p>
+
+
+
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+<div id="s5" class="section">
+    <div class="title">وفاته </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <p> وقال أبو سعيد بن يونس: نسبوه في موالي بني أمية، سأل القاسم بن محمد وسالم بن عبدالله، زعموا أنه توفي بصعيد مصر سنة اثنتين وخمسين ومئة.</p>
+<p>وقال يحيى بن بكير: توفي سنة بضع وخمسين ومئة. </p>
+<p> وقال البخاري، والمفضل بن غسان الغلابي، وأبو حاتم بن حبان: مات سنة تسع وخمسين ومئة.</p>
+<p> وقال محمد بن عزيز الأيلي: مات سنة ستين ومئة</p>
+
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام أيوب السختياني</title>
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow: 1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content {
+    flex:1;
+    padding:30px;
+    min-height:100vh;
+}
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام أيوب السختياني</div>
+
+<div class="container">
+<div class="sidebar">
+ <button onclick="show('s1')">تعريف بسيط عنه</button>
+ <button onclick="show('s2')">شيوخه</button>
+ <button onclick="show('s3')">طلابه</button>
+ <button onclick="show('s4')">مناقبه</button>
+ <button onclick="show('s5')">وفاته</button>
+ 
+
+ <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>شيوخه</span><div id="c2" class="circle"></div>
+    <span>من تلاميذه</span><div id="c3" class="circle"></div>
+    <span>مناقبه</span><div id="c4" class="circle"></div>
+    <span>وفاته</span><div id="c5" class="circle"></div>
+ 
+
+</div>
+
+<div id="s1" class="section">
+ <div class="title">تعريف بسيط عنه</div>
+ <div class="contentText">
+ <!-- اكتبي نص التعريف هنا -->
+أيوب بن أبي تيمية كيسان السختياني، وكنيته أبو بكر وقد نُسب إلى "العنزي" و"البصري" أيضاً، وكان مولى طهية أو يُقال ولاؤه لطهية، وقيل لجهينة وهو من صغار التابعين. ولد في العام الذي توفي فيه ابن عباس، سنة ثمان وستين وقد رأى أنس بن مالك، وما وجدنا له عنه رواية، مع كونه معه في بلد، وكونه أدركه وهو ابن بضع وعشرين سنة. 
+ <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s2" class="section">
+ <div class="title"> شيوخه</div>
+ <div class="contentText">
+ <!-- اكتبي نص علمه ومكانته هنا -->
+أبي بريد عمرو بن سلمة الجرمي، وأبي عثمان النهدي، وسعيد بن جبير، وأبي العالية الرياحي، وعبدالله بن شقيق، وأبي قلابة الجرمي محمد بن سيرين، وعمرو بن دينار، والزهري، وقتادة، وغيرهم 
+<button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s3" class="section">
+ <div class="title">من تلاميذه</div>
+ <div class="contentText">
+ <!-- اكتبي نص  شيوخه هنا -->
+محمد بن سيرين، وعمرو بن دينار، والزهري، وقتادة – وهم من شيوخه- ويحيى بن أبي كثير، وشعبة، وسفيان، ومالك، ومعمر، وعبد الوارث، وحماد بن سلمة، وسليمان بن المغيرة، وغيرهم
+<button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s4" class="section">
+ <div class="title">مناقبه</div>
+ <div class="contentText">
+ <!-- اكتبي نص تلاميذه هنا -->
+<p>عن سفيان الثوري قال: قال الحسن لأيوب: أيوب سيد شباب أهل البصرة</p>
+<p>قال محمد بن سعد الكاتب: كان أيوب ثقة، ثبتا في الحديث، جامعا، كثير العلم، حجة، عدلا</p>
+<p>قال أبو حاتم وسئل عن أيوب، فقال: ثقة، لا يسأل عن مثله</p>
+<p>قال ابن المديني: له نحو من ثمانمائة حديث</p>
+<p>روى ضمرة عن ابن شوذب، قال: كان أيوب يؤم أهل مسجده في شهر رمضان، ويصلي بهم في الركعة قدر ثلاثين آية، ويصلي لنفسه فيما بين الترويحتين بقدر ثلاثين آية. وكان يقول هو بنفسه للناس: الصلاة، ويوتر بهم، ويدعو بدعاء القرآن، ويؤمن من خلفه، وآخر ذلك، يصلي على النبي- صلى الله عليه وسلم- ويقول: اللهم استعملنا بسنته وأوزعنا بهديه واجعلنا للمتقين إماما، ثم يسجد. وإذا فرغ من الصلاة دعا بدعوات.</p>
+<p>قال حماد بن زيد: أيوب عندي أفضل من جالسته، وأشده اتباعا للسنة.</p>
+<p>عن الحميدي قال: لقي ابن عيينة ستة وثمانين من التابعين، وكان يقول: ما رأيت مثل أيوب.</p>
+<p>عن حماد قال: ما رأيت رجلا قط أشد تبسما في وجوه الرجال من أيوب</p>
+<p>عن شعبة: ما رأيت قط مثل أيوب</p>
+<p>عن الخليل بن أحمد، قال: لحن أيوب في حرف، فقال: أستغفر الله</p>
+
+ <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s5" class="section">
+ <div class="title">وفاته</div>
+ <div class="contentText">
+ <!-- اكتبي نص زهده وخلقه هنا -->
+اتفقوا على أنه توفي سنة إحدى وثلاثين ومائة بالبصرة، زمن الطاعون، وله ثلاث وستون سنة. وآخر من روى حديثه عاليا، أبو الحسن بن البخاري 
+<button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+</div>
+
+
+
+</div>
+
+<script>
+function show(id){
+ document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+ document.getElementById(id).style.display='block';
+}
+function mark(n){
+ document.getElementById('c'+n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

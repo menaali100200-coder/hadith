@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام سفيان الثوري 
+     </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+
+/* حل مشكلة الـ pre */
+.contentText pre {
+    white-space: pre-wrap;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* تأكد أن الدوائر تظهر */
+.circle.active {
+    background: #7a5c32 !important;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">الإمام سفيان الثوري
+     </div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">مكانته العلمية
+
+    </button>
+    <button onclick="show('s3')">شيوخه
+
+    </button>
+    <button onclick="show('s4')">روى عنه
+
+    </button>
+    <button onclick="show('s5')">شهادة العلماء له
+
+    </button>
+    <button onclick="show('s6')">مناقبه وأقواله
+
+    </button>
+   
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span> مكانته العلمية
+
+    </span><div id="c2" class="circle"></div>
+    <span> شيوخه
+
+    </span><div id="c3" class="circle"></div>
+    <span>روى عنه
+
+    </span><div id="c4" class="circle"></div>
+    <span>شهادة العلماء له
+
+    </span><div id="c5" class="circle"></div>
+    <span>   مناقبه وأقواله
+    </span><div id="c6" class="circle"></div>
+   
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pr>
+    هو سفيان بن سعيد الثوري الفقيه المحدث عالم التفسير، كوفي النسبة بصري الوفاة، ولد اتفاقاً سنة 97 هــ وتوفي سنة 161 هــ
+ والده سعيد بن مسروق محدث ثقة أيضاً وهو من أصحاب الشعبي وجده مسروق شهد مع علي – رضي الله عنه وكرم الله وجهه- موقعة الجمل.
+عرفه الإمام الذهبي في سيره فقال: هو شيخ الإسلام وإمام الحفاظ، المجتهد وهو مصنف كتاب الجامع.
+يعد سفيان من تابعي التابعين، ذكره ابن سعد في طبقاته في الطبقة السادسة، طلبه المهدي فخرج سفيان إلى مكة ثم عُرف فتحول إلى البصرة وسكن بجوار الإمام يحيى بن سعيد القطان وفتح بينه وبينه باباً ثم عندما اشتهر حوله يحيى إلى منزل الهيثم بن منصور وتخفى لمدة من الزمن ومات بالبصرة.
+عندما حضرته الوفاة طلب أن يدعى له حماد بن سلمة وطلب ان يلقنه حماد فجاء حماد مسرعاً حافياً ما عليه إلا الإزار فقال له سفيان: يا حماد خذ حذرك واحذر هذا المصرع.
+
+</pr>
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">مكانته العلمية
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pr>
+طلب الإمام سفيان العلم مبكراً وقد كانت أمه تشجعه على ذلك وتقول: اذهب فاطلب العلم وأنا أعولك بمغزلي فإذا كتبت عشرة أحاديث فانظر هل تجد في نفسك زيادة فاتبعه وإلا فلا تتبعه.
+كان كثير الرحلات في طلب العلم، رحل إلى الحجاز أكثر من مرة وفي نهاية عمره رحل إلى البصرة ومات فيها. 
+طارت شهرته في الآفاق وهو صغير.
+كان فقيهاً مجتهداً، قال ابن عيينة: ما رأيت رجلاً أعلم بالحلال والحرام من سفيان الثوري.
+كان الإمام سفيان شديد التحذير من أهل البدع، قال: من سمع ببدعة فلا يحكها لجلسائهِ لا يلقها في قلوبهم.
+كان عالماً بالتفسير، قال عبدالرحمن بن مهدي: كان سفيان يأخذ المصحف فلا يكاد يمر بآية إلا فسرها فربما مر بالآية فيقول: أي شيء عندك في هذه؟ فأقول: ما عندي فيها شيء فيقول: تضيع مثل هذه لا يكون عندك فيها شيء؟
+ومن أمثلة التفسير المأثور عنه: قوله في تفسير ﴿ سَنَسْتَدْرِجُهُم ﴾قال: نسبغ عليهم النعم ونمنعهم الشكر.
+وأما في الحديث فقد حاز أرفع مرتبة للرواة فهو أمير المؤمنين في الحديث، وقد روى له أصحاب الكتب الستة في دواوينهم.
+وقال الذهبي: أجل إسناد للعراقيين: سفيان الثوري عن منصور بن ابراهيم عن علقمة عن عبدالله بن مسعود –رضي الله عنهم-. وهذا الإسناد أيضاً رجحه النسائي
+
+</pr>
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">شيوخه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+من شيوخه: أيوب السختياني، عبدالله بن أبي بردة، ابراهيم بن عبد الأعلى وآخرون ويقال إنه عدد شيوخه ست مائة شيخ.
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title"> روى عنه
+</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+روى عنه أولاده وشعبة بن الحجاج وأبو عوانة وآخرون 
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+<div id="s5" class="section">
+    <div class="title">شهادة العلماء له
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+كما ذكرنا سابقاً حاز سفيان الثوري أرفع رتبة للرواة بشهادة أئمة الجرح والتعديل فهو أمير المؤمنين بالحديث. 
+ومن شهادات الأئمة له:
+قال وكيع: لولا سفيان لمات الورع.
+قال أحمد بن حنبل: قال لي ابن عيينة: (لن ترى بعينيك مثل سفيان الثوري حتى تموت)
+قال ابن المبارك: ما نُعت لي أحدٌ فرأيته إلا وجدته دون نعته إلا سفيان الثوري.
+قال علي بن المديني: لا أعلم سفيان صحف في شيء قط إلا في اسم امرأة أبي عبيد كان يقول: حفينة وهي اسمها جفينة.
+
+
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title">مناقبه وأقواله
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+كان رقيق القلب، زاهداً كثير العبادة.
+كان أصفق وجهاً في ذات الله.
+كان ورعاً وكان يبكي كثيراً، قال ابن مهدي: بات سفيان عندي فجعل يبكي فقيل له، فقال: لذنوبي عندي أهون من ذا -ورفع شيئاً من الأرض- إني أخاف أن أسلب الإيمان قبل أن أموت.
+قال: ليس الزهد بأكل الغليظ ولبس الخشن ولكنه قصر الأمل وارتقاب الموت.
+قال: إني لألقى الرجل أبغضه فيقول: كيف أصبحت؟ فيلين له قلبي، فكيف بمن اكل طعامهم.
+قال: زينوا العلم والحديث بأنفسكم ولا تتزينوا به.
+قال: إني لأرى الشيء يجب علي أن اتكلم فيه فلا أفعل فأبول دماً
+قال: ما وضع رجلٌ يده في قصعة رجل إلا ذل له.
+كان جالساً بمكة فوثب وقال: النهار يعمل عمله.
+وقال: ما بلغني عن رسول الله -صلى الله عليه وسلم- حديث قط إلا عملت به ولو مرة واحدة.
+وقال: ما استودعت قلبي شيئاً قط فخانني.
+
+</pre>
+
+    </div>
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

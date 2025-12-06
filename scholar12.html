@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام شعبة بن الحجاج
+     </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+/* حل مشكلة الـ pre */
+.contentText pre {
+    white-space: pre-wrap;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* تأكد أن الدوائر تظهر */
+.circle.active {
+    background: #7a5c32 !important;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام شعبة بن الحجاج
+     </div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">شيوخه
+
+    </button>
+    <button onclick="show('s3')">تلامذته
+
+    </button>
+    <button onclick="show('s4')">علمه ومنهجه
+
+    </button>
+    <button onclick="show('s5')">مناقبه
+
+    </button>
+    <button onclick="show('s6')"> وفاته
+
+    </button>
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span> شيوخه
+
+    </span><div id="c2" class="circle"></div>
+    <span>تلامذته 
+
+    </span><div id="c3" class="circle"></div>
+    <span>علمه ومنهجه
+
+    </span><div id="c4" class="circle"></div>
+    <span>مناقبه
+
+    </span><div id="c5" class="circle"></div>
+    <span>    وفاته
+    </span><div id="c6" class="circle"></div>
+
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+شعبة بن الحجاج بن الورد العتكي، كنيته أبو بسطام، من أشهر ألقابه: أمير المؤمنين في الحديث.
+ولد في مدينة واسط بالعراق، وانتقل صغيرا إلى البصرة وعاش فيها
+التخصص: يُعرف بأنه من حفاظ الحديث وأحد رواة الحديث الأوائل وله دور كبير في تدوين الحديث وتصحيحه.
+مكانته: نالت مكانته تقديراً عالياً من قبل العلماء، منهم سفيان الثوري الذي لقبه بـ" أمير المؤمنين في الحديث"، والشافعي الذي قال: لولا شعبة ما عُرف الحديث بالعراق.
+سافر إلى البصرة لطلب العلم والتتلمذ على علماء الحديث فيها مثل أنس بن سيرين، وأيوب السختياني، وعمرو بن مرة. بعد ولادته ونشأته في مدينة واسط، ارتحل إلى البصرة لتصبح موطنه الأخير واستقر بها حتى وفاته للأستفادة من علمائها الذين يُعتبرون من كبار المحدثين.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">شيوخه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+عمرو بن دينار، الأعمش، أيوب السختياني، قتادة بن دعامة، عدي بن ثابت، يحيى بن أبي كثير، وغيرهم
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">تلامذته
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+أيوب السختياني: كان من أبرز تلامذته، وهو من شيوخه أيضاً.
+الأعمش: روى عن شعبة، كما روى له مسلم في صحيحه.
+ابن اسحاق: صاحب السيرة الشهيرة، وهو من تلامذة شعبة.
+سفيان الثوري: من أشهر تلامذته، وقد روى عن شعبة.
+عبدالله بن المبارك: من كبار الرواة عن شعبة.
+يحيى بن سعيد القطان: روى عن شعبة وعده في عداد تلامذته
+عبدالرحمن بن مهدي
+سفيان بن عيينة: روى عنه
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title"> علمه ومنهجه
+</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+الدقة والتثبت: اشتهر بتشدده في الرواية وتوثيق الرجال، وكان يبحث عن الحديث ويتتبعه بنفسه حتى يصل إلى المصدر الأصلي، حتى لو تطلب ذلك سفره
+أمير المؤمنين في الحديث: لقب بــ" أمير المؤمنين في الحديث" من قبل الأئمة مثل الإمام الشافعي والإمام أحمد بن حنبل، لدقته العالية في الحديث والرجال.
+حفظ الشعر: كان حافظ للحديث ولم ير أعلم منه بالشعر أيضاً
+تأسيس علم الجرح والتعديل: ساهم في تأسيس علم الجرح والتعديل بفضل منهجه الصارم في التحديث والرواية ولم يكن يحدث إلا عن ثقة.
+تأثيره العلمي: كانت له بصمة كبيرة في حفظ السنة النبوية ونقلها للأجيال اللاحقة.
+</pre>
+</div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+<div id="s5" class="section">
+    <div class="title">مناقبه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+قال أحمد بن حنبل: شعبة أثبت من الأعمش في الحكم، وشعبة أحسن حديثاً من الثوري، وقد روى عن ثلاثين كوفيا، لم يلقهم سفيان. قال: وكان شعبة أمة وحده في هذا الشأن.
+قال عبد السلام بن مطهر: ما رأيت أحد أمعن في العبادة من شعبة.
+قال أبو نعيم: سمعت شعبة يقول: لأن أزني أحب إلي من أن أدلس.
+وقال سليمان بن حرب: حدثنا شعبة يوما بحديث الصادق المصدوق وأحاديث نحوه، فقال رجل من القدرية: يا أبا بسطام! ألا تحدثنا نحن أيضاً بشيء؟ فذكر حديث أبي صالح، عن أبي هريرة عن النبي -صلى الله عليه وسلم- كل مولود يولد على الفطرة.
+قال يحيى القطان: كان شعبة من أرق الناس، يعطي السائل ما أمكنه.
+وقال أبو قطن: كانت ثياب شعبة كالتراب، وكان كثير الصلاة، سخيا، وعن عبدالعزيز بن أبي رواد قال: كان شعبة إذا حك جسمه، انتثر منه التراب، وكان سخيا، كثير الصلاة.
+قال أبو داود الطيالسي: كنا عند شعبة، فجاء سليمان بن المغيرة يبكي، وقال: مات حماري، وذهبت مني الجمعة، وذهبت حوائجي. قال: بكم أخذته؟ قال: بثلاثة دنانير. قال شعبة: فعندي ثلاثة دنانير. والله ما أملك غيرها. ثم دفعها إليه.
+قال النضر بن شميل: ما رأيت أرحم بمسكين من شعبة.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title">   وفاته
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+توفي الإمام شعبة بن الحجاج في عام 160 هــ (776م) في البصرة، وذكرت بعض المصادر أن سبب وفاته كان بسبب مرض الطاعون. عاش شعبة في البصرة وتوفي فيها، وهو يُعد من كبار رواة الحديث وحافظيه.
+    </div>
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

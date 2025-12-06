@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title> الإمام سفيان بن عيينة
+
+</title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+/* حل مشكلة الـ pre */
+.contentText pre {
+    white-space: pre-wrap;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* تأكد أن الدوائر تظهر */
+.circle.active {
+    background: #7a5c32 !important;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام سفيان بن عيينة
+
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">مسيرته العلمية
+
+    </button>
+    <button onclick="show('s3')">شيوخه
+
+    </button>
+    <button onclick="show('s4')">تلامذته
+
+    </button>
+    <button onclick="show('s5')">أشعاره
+
+    </button>
+    <button onclick="show('s6')">أقوال العلماء فيه وثناؤهم عليه
+
+    </button>
+    <button onclick="show('s7')">وفاته
+
+    </button>
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>مسيرته العلمية
+
+    </span><div id="c2" class="circle"></div>
+    <span>شيوخه
+
+    </span><div id="c3" class="circle"></div>
+    <span>تلامذته
+
+    </span><div id="c4" class="circle"></div>
+    <span>أشعاره
+
+    </span><div id="c5" class="circle"></div>
+    <span>أقوال العلماء فيه وثناؤهم عليه
+    </span><div id="c6" class="circle"></div>
+    <span>وفاته
+
+    </span><div id="c7" class="circle"></div>
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->        سفيان بن عيينة بن أبي عمران ميمون مولى محمد بن مُزاحم، أخي الضحاك بن مُزاحم، الإمام الكبير، حافظ العصر، شيخُ الإسلام، أبي محمد الهلالي، الكوفي، ثم المكي. ولد بالكوفة سنة 107 هــ (725 م) ونشأ بها. كان له تسعة إخوة، لم يروِ الحديث منهم إلا أربعة. ولم يُعلم أنه تزوج قط، ولم يُعلم له ولد، ثم انتقل الى مكة وبها توفي.
+</div>
+
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">مسيرته العلمية 
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <pre>
+    يُعد سفيان بن عُيينة اماما ثبتا ضابطا عالما بالحديث. وهو من تابعي التابعين من الطبقة الخامسة من أهل مكة. طلب العلم في سِن مُبكرة. لقي الكبار من التابعين، وحمل عنهم عِلمًا جمًا. كُتب عنه الحديث وهو ابن خمسٍ وثلاثين سنة وعُمر دهراً، وازدَ ازدحم الخَلقُ عليه، وانتهى إليه علو الإسناد، حدث عنه الأعمش وابن جريج وهؤلاء شيوخه. 
+لم يعتن بالفقه والاجتهاد كالإمام مالك الذي قصد بلادا كثيرة للفتوى. فلقد توفرت في سفيان آلة الفتوى كاملة، غير أنه كان يكف عنها ورعاً، لذلك لا يوجد له كتبٌ في الفتوى والاجتهاد ولم يُدون فقهه أحدٌ من تلاميذه، غير بعض من الآراء الفقهية المنتشرة في بطون الكتب
+</pre>
+</div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">شيوخه   </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <pre>
+    له شيوخ كثيرون أخذ عنهم العِلم، وتفقهَ على أيديهم، وكان مُعظمهم من التابعين، ونذكر بعضهم: 
+ابن شهاب الزهري، عمرو بن دينار، أبو إسحاق السبيعي، عطاء بن السائب، أيوب السختياني، هشام بن عروة، الأعمش، شعبة بن الحجاج، سفيان الثوري
+</pre>
+   </div>
+ <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title"> تلامذته
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->الشافعي، أحمد بن حنبل، حماد بن زيد، عبدالله بن المبارك، عبدالرحمن بن مهدي، يحيى القطان، يحيى بن معين، علي بن المديني، الحميدي شيخ البخاري 
+   </div>
+ <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+<div id="s5" class="section">
+    <div class="title">أشعاره
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <pre>
+    كان سفيان أدبياً وشاعراً فصيحاً بالإضافة إلى معرفته للعلوم الشرعية الإسلامية، ولا يزال شعره متداولاً حتى الآن، وصارت بعض أبياته أمثالاً يتداولها الناس في حياتهم اليومية. 
+ومن قصائده المشهورة:
+إذا ما رأيت المرءَ يقتاده الهوى  فقد ثكلَته عند ذاك ثواكِله
+وقد أشمت الأعداء جهلاً بنفسه  وقد وجدت فيه مقالاً عواذله
+ولن يزع النفس اللجوج عن الهوى  من الناس إلا فاضلُ العقل كامله</pre> 
+  </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title"> أقوال العلماء فيه وثناؤهم عليه  </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <pre>
+            قال مالك بن أنس: رجل صاحب سنة.
+قال الشافعي: لولا مالك وسفيان بن عيينة لذهب علم الحجاز. وقال: ما أريت أحداً أحسن تفسيراً للحديث منه. ومن أقواله ايضا: تطلبت أحاديث الأحكام، فوجدتها كلها سوى ثلاثين حديثاً عند مالك، ووجدتها كلها سوى ستة أحاديث عند ابن عيينة.
+قال أحمد بن حنبل: ما أريت أحداً أعلم بالسنن من ابن عيينة. وقال: ما رأينا نحن مثله.
+قال أبو حنيفة: جاءكم حافظُ علم عمرو بن دينار. قال سفيان: فجاء الناس يسألونني عن عمر بن دينار، فأول من صيرني محدثاً أبو حنيفة.
+قال عبدالله بن وهب: ما رأيت أحداً أعلم بكتاب الله من ابن عيينة.
+قال أحمد العجلي: كان ابن عيينة ثبتاً في الحديث، وكان حديثه نحواً من سبعة الآف، ولم تكن له كتب.
+قال يحيى بن معين: أثبت الناس في عمرو بن دينار ابن عيينة.
+قال ابن مهدي: عند ابن عيينة من معرفته بالقرآن وتفسير الحديث وغوصه على حروف متفرقة يجمعها ما لم يكن عند الثوري. وقال: كان ابن عيينة من أعلم الناس بحديث الحجاز.
+قال سفيان الثوري: لما سئل عن ابن عُيينة: ذاك أحدُ الأحدين.
+قال يحيى القطان: ما بقي من معلمي الذين تعلمت منهم غير سفيان بن عيينة، وهو إمام القوم منذ أربعين سنة.
+قال علي بن المديني: ما في أصحاب الزهري أحد أتقن من سفيان بن عيينة. كما نقل إجماعاً في الثناء عليه، قائلاً: أما أنا فإني أقدم سفيان بن عيينة... الذي سمع سماعا لا يشك فيه، ولم يتكلم فيه أحد، ولم يطعن فيه طاعن.
+قال أبو حاتم الرازي: سفيان بن عيينة، إمام، ثقة، كان أعلم بحديث عمرو بن دينار من شعبة، قال: وأثبت أصحاب الزهري هو ومالك.
+قال يحيى بن سعيد: اشهدوا أن سفيان بن عيينة اختلط سنة سبع وتسعين، فمن سمع منه في هذه السنة وبعد هذا فسماعه لا شيء.
+قال الذهبي: كان سفيان مشهوراً بالتدليس، عمد إلى أحاديث رفعت إليه من حديث الزهري، فيحذف اسم من حدثه ويدلسها، إلا أنه لا يدلس إلا عن ثقة عنده.</pre>
+           </div>
+
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+<div id="s7" class="section">
+    <div class="title">وفاته</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+        <pre>
+توفي بمكة يوم السبت آخر يوم من جمادى الآخرة سنة 198 هــ(813 م)
+قال الأصمعي يرثي ابن عُيينة: 
+لِيبكِ سُفْيَانَ بَاغِي سُنَّةٍ درسَتْ   وَمُسْتبِين أَثَارَاتٍ وَآثَار
+وَمُبْتَغِي قُرْب إِسْنَادٍ وَمَوْعِظَة   وَوَاقِفِيُّونَ مِنْ طَارٍ وَمِنْ سَارٍ
+أَمْسَتْ مَنَازِلُهُ وَحْشًا مُعَطَّلَةً   مِنْ قَاطِنِينَ وَحُجَّاجٍ وَعُمَّار
+فَالشِّعْبُ شِعْبُ عَليّ بعْدَ بَهْجَتِهِ   قَدْ ظَلَّ مِنْهُ خَلاءً مُوحِشَ الدَّارِ
+مَنْ لِلْحَدِيثِ عَنِ الزُّهْرِيِّ يُسْنِدُهُ   وَلِلأَحَادِيثِ عَنْ عَمْرِو بْنِ دِينَار
+مَا قَامَ مِنْ بَعْدِهِ مَنْ قَالَ حَدَّثَنَا الز   زهْرِيُّ فِي أَهْلِ بَدْوٍ أَوْ بِأَحْضَارٍ
+وَقَدْ أرَاهُ قَرِيبًا مِنْ ثَلاثِ مِنًى   قَدْ حَفَّ مَجْلِسَهُ مِنْ كُلِّ أَقْطَار
+بَنُو الْمَحَابِرِ وَالأقْلامِ مُرْهَفَةً   وَسمًا سِمَاتٍ فَرَاهَا كُلُّ نَجَّارٍ</pre>
+     </div> 
+ <button class="doneBtn" onclick="mark(7)">أتممت القراءة</button>
+</div>
+ 
+ 
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+window.onload=function(){
+    show('s1');
+mark(1);
+};
+</script>
+
+</body>
+</html>

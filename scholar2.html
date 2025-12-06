@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام قتادة</title>
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow: 1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content {
+    flex:1;
+    padding:30px;
+    min-height:100vh;
+}
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام قتادة</div>
+
+<div class="container">
+<div class="sidebar">
+ <button onclick="show('s1')">تعريف بسيط عنه</button>
+ <button onclick="show('s2')">شيوخه</button>
+ <button onclick="show('s3')">طلابه</button>
+ <button onclick="show('s4')">مكانته وخصائصه</button>
+ <button onclick="show('s5')">زهده وخلقه</button>
+ <button onclick="show('s6')">عنايته بالسنة</button>
+  <button onclick="show('s7')">وفاته</button>
+
+ <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>شيوخه</span><div id="c2" class="circle"></div>
+    <span>من تلاميذه</span><div id="c3" class="circle"></div>
+    <span>مكانته</span><div id="c4" class="circle"></div>
+    <span>زهده</span><div id="c5" class="circle"></div>
+    <span>عنايته بالسنة</span><div id="c6" class="circle"></div>
+    <span>وفاته</span><div id="c7" class="circle"></div>
+
+</div>
+
+<div id="s1" class="section">
+ <div class="title">تعريف بسيط عنه</div>
+ <div class="contentText">
+ <!-- اكتبي نص التعريف هنا -->
+قتادة بن دعامة بن قتادة السدوسي البصري، أبو الخطاب. من أئمة التابعين، وأحد كبار المحدثين والمفسرين في البصرة وفي صغره كان ضريراً وذلك لم يمنعه من طلب العلم والسير فيه، بل كان يُملي الحديث على الناس من حفظه، فيُدهش من يسمعه بدقته
+ولد نحو سنة 60 هــ في البصرة، ونشأ فيها محباً للعلم والحديث 
+ <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s2" class="section">
+ <div class="title"> شيوخه</div>
+ <div class="contentText">
+ <!-- اكتبي نص علمه ومكانته هنا -->
+ أنس بن مالك، سعيد بن المسيب، محمد بن سيرين، الزهري وغيرهم 
+ <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s3" class="section">
+ <div class="title">من تلاميذه</div>
+ <div class="contentText">
+ <!-- اكتبي نص  شيوخه هنا -->
+سفيان الثوري، شعبة بن الحجاج، حماد بن زيد، الأعمش وغيرهم
+<button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s4" class="section">
+ <div class="title">مكانته</div>
+ <div class="contentText">
+ <!-- اكتبي نص تلاميذه هنا -->
+قال الإمام أحمد بن حنبل: قتادة أحفظ أهل البصرة
+وقال ابن سعد: كان ثقة مأموناً، حجة في الحديث
+وقال ابن حجر: ثقة ثبت، ربما دلس
+وقال الإمام الذهبي: وكان رأساً في التفسير، يُقدم على أهل زمانه في العلم بكتاب الله
+قال ابن سعد: كان ثقة مأموناً، حجة في الحديث، واسع العلم
+
+ <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s5" class="section">
+ <div class="title">زهده وخلقه</div>
+ <div class="contentText">
+ <!-- اكتبي نص زهده وخلقه هنا -->
+كان زاهداً ورعاً، يخاف الله في كلامه وفتواه. لم يكن يحب الشهرة ولا يجادل في الدين، وكان إذا سُئل عما لا يعلم قال: " لا أدري، هو قول العلماء قبلي"  </div>
+ <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+</div>
+
+<div id="s6" class="section">
+ <div class="title">عنايته بالسنة </div>
+ <div class="contentText">
+ <!-- اكتبي نص أثره العلمي هنا -->
+كان يقول: ما من شيء أحب الي من حديث رسول الله إذا صح سنده </div>
+ <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+<div id="s7" class="section">
+ <div class="title">وفاته </div>
+ <div class="contentText">
+ <!-- اكتبي نص أثره العلمي هنا -->
+توفي رحمه الله سنة 117 هــ أو 118 هــ في واسط، في خلافة هشام بن عبدالملك 
+<button class="doneBtn" onclick="mark(7)">أتممت القراءة</button>
+</div>
+</div>
+
+</div>
+
+<script>
+function show(id){
+ document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+ document.getElementById(id).style.display='block';
+}
+function mark(n){
+ document.getElementById('c'+n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

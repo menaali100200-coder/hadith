@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام حماد بن سلمة
+    
+     </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+/* حل مشكلة الـ pre */
+.contentText pre {
+    white-space: pre-wrap;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* تأكد أن الدوائر تظهر */
+.circle.active {
+    background: #7a5c32 !important;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام حماد بن سلمة
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">شيوخه
+
+    </button>
+    <button onclick="show('s3')">تلاميذه
+
+    </button>
+    <button onclick="show('s4')">أقوال العلماء فيه
+
+    </button>
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span> شيوخه
+
+    </span><div id="c2" class="circle"></div>
+    <span>تلاميذه
+
+    </span><div id="c3" class="circle"></div>
+    <span>أقوال العلماء فيه
+
+    </span><div id="c4" class="circle"></div>
+  
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+ حماد بن سلمة ابن دينار، الإمام القدوة، أبو سلمة البصري النحوي، ابن اخت حُميد الطويل. ولد في البصرة عام 91 هــ وتوفي فيها في ذي الحجة عام 176 هــ، كان عمره 76 عاماً، وقيل توفي في يوم الثلاثاء أثناء صلاته.
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">شيوخه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+ابن أبي مليكة، عمار بن أبي عمار، ثابت البُناني، عبدالله بن كثير الدراي، قتادة بن دعامة السدوسي، سماك بن حرب، أيوب السختياني، عمرو بن دينار، أبو الزبير المكي، عطاء بن السائب، وغيرهم الكثير.
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">تلاميذه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+ابن جريج، ابن المبارك، يحيى القطان، ابن مهدي، ابو نُعيم، القتبي، موسى بن إسماعيل التبُوذكي، وغيرهم الكثير.
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title"> أقوال العلماء فيه
+</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+شعبة: كان حماد يُفيدني عن عمار بن أبي عمار.
+وُهيب بن خالد: حماد بن سلمة سيدنا وأعلمنا.
+أحمد بن حنبل: هو أعلم من غيرهُ بحديث علي بن زيد بن جُدعان. وقال: أعلمُ الناس بثابت البُناني حماد بن سلمة وهو أثبتهم في حُميد الطويل.
+ابن معين: حماد بن سلمة ثقة.
+علي بن المديني: هو عندي ثقة في رجال، وهو أعلم الناس بثابت البُـناني، وعمار بن أبي عمار، ومن تكلم في حماد فاتهموه في الدين.
+الذهبي: كان بحرا من بحور العلم، وله أوهام في سعة ما روى، وهو صدوق حُجة إن شاء الله، وليس هو في الاتقان حماد بن زيد.
+عبدالله الجمحي: حدثنا الحمادان، وفضلُ بن سلمة على بن زيد كفضل الدينار على الدرهم – يعني الذي اسم جده دينار أفضل من حماد بن زيد الذي اسمه جده درهم- وهذا محمول على جلالته ودينه، وأما الإتقان فمسلم إلى ابن زيد.
+اسحاق بن الطباع: سمعتُ حماد بن سلمة يقول: من طلب العلم لغير الله تعالى مُـكِـرَ به.
+كما ان البخاري لم يروي له في صحيحه –سوى حديث فب الرقاق- أما مسلم روى له في الأصول عن ثابت وحُميد، لكونه خبيرا بهما.
+وقيل أن يحيى بن معين جاء إلى عفان ليسمع منه كُتب حماد بن سلمة، فقال: أما سمعتها من أحد؟ قال: نعم، حدثني سبعة عشر نفسا عن حماد، قال: والله لا حدثتُك، فقال: إنما هو درهم وانحدر إلى البصرة، فأسمعُ من التبُوذكي. قال: سمعتُها على الوجه من سبعة عشر، وأنت الثامن عشر. قال: وما تصنع بهذا؟ قال: إن حماد بن سلمة كان يُخطئ، فأردت أن أميز خطأه من خطأ غيره، فإذا رأيتُ أصحابه اجتمعوا على شيء علمتُ أن الخطأ منه.
+عبدالرحمن بن مهدي: لو قيل لحماد بن سلمة: إنك تموت غداً. ما قدر أن يزيد في العمل شيئا. أي أنه – رحمه الله- كثير العبادة.
+يونس بن محمد المؤدب: مات حماد بن سلمة في الصلاة في المسجد.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

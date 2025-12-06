@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام الأوزاعي
+     </title>
+
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content { flex:1; padding:30px; min-height:100vh; }
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+/* حل مشكلة الـ pre */
+.contentText pre {
+    white-space: pre-wrap;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* تأكد أن الدوائر تظهر */
+.circle.active {
+    background: #7a5c32 !important;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    الإمام الأوزاعي
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+    <button onclick="show('s1')">تعريف بسيط عنه</button>
+    <button onclick="show('s2')">الكتابة والأدب
+
+    </button>
+    <button onclick="show('s3')">تحوله من الكتابة إلى الحديث والفقه
+
+    </button>
+    <button onclick="show('s4')">مذهبه
+
+    </button>
+    <button onclick="show('s5')">درر من أقواله
+
+    </button>
+    <button onclick="show('s6')">    وفاته
+
+    </button>
+
+    <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>الكتابة والأدب
+
+    </span><div id="c2" class="circle"></div>
+    <span>تحوله من الكتابة إلى الحديث والفقه
+
+    </span><div id="c3" class="circle"></div>
+    <span>مذهبه
+
+    </span><div id="c4" class="circle"></div>
+    <span>درر من أقواله
+
+    </span><div id="c5" class="circle"></div>
+    <span>وفاته
+    </span><div id="c6" class="circle"></div>
+ 
+</div>
+
+<!-- الأقسام بدون نصوص -->
+<div id="s1" class="section">
+    <div class="title">تعريف بسيط عنه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+هو الإمام الكبير" عبد الرحمن بن عمرو بن محمد الأوزاعي" المكني بـ"أبي عمرو". أطلق عليه اسم " الأوزاعي" نسبة إلى "الأوزاع" وهي قبيلة يمنية حميرية من بطن ذي الكلاع من قحطان. نزل أفرادٌ منها في دمشق قرب باب الفراديس، وقد أُطلق على المنطقة التي نزلوا فيها اسم قرية " الأوزاع". قيل أنه ولد ببعلبك بــلبنان سنة 88 هــ، ونشأ بها يتيماً في حجر أمه، قال ابن كثير: نشأ الأوزاعي بالبقاع يتيماً في حجر أمه، وكانت تنتقل به من بلد إلى بلد، وتأدب بنفسه، فلم يكن في أبناء الملوك والخلفاء والوزراء والتجار وغيرهم أعقل منه، ولا أورع ولا أعلم، ولا أفصح ولا أوقر ولا أحلم، ولا أكثر صمتاً منه.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+    <div class="title">الكتابة والأدب
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+اشتهر أن الأوزاعي فقيه مجتهد، لكن هناك ناحية أدبية عنده، إذ يذكر مترجموه أنه كان بارعاً في الكتابة وأنها كانت صنعته، فرسائله تؤثر وينقلون أنه كان من ذلك موضع الإعجاب والإكبار، إذ يروون أن كتبه كانت ترد على المنصور فينظر فيها ويتأملها، ويتعجب من فصاحتها وحلاوة عبارتها؛ وكان مشاهير الكتاب يقتبسون من قوله، ويأخذون عنه، ويتهيبون الإجابة على رسائله؛ إذ يقول المنصور يوماً لأحظى كتابة عنده، وهو سليمان بن مخلد: ينبغي أن تجيب الأوزاعي عن كتبه، فيقول: والله يا أمير المؤمنين لا يقدر أحد من أهل الأرض على ذلك وقال: لا على مثل كلامه ولا على شيء منه؛ وإنا لنستعين بكلامه نكاتب به إلى الآفاق، إلى من لا يعرف أنه كلام الأوزاعي.
+يقول الذهبي في طبقات الحفاظ أن الأوزاعي كانت صنعته الكتابة والترسل فرسائله تؤثر.
+لكن فقه الشيخ طغى على أدبه، وأخمل ذكره فيه.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s3" class="section">
+    <div class="title">تحوله من الكتابة إلى الحديث والفقه
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+خرج الأوزاعي يوماً إلى اليمامة مع أحد الجيوش كاتبًا، فتفرس فيه العلم والنبوغ أحد أعلام تلك الفترة الزمنية وهو يحيى بن أبي كثير حينما حين رآه في مسجد باليمامة، وكان يحيى بن أبي كثير قريبا منه فجعل ينظر صلاته فأعجبته، ثم جلس إليه وسأله عن بلده وغير ذلك فأعجبته شخصيته وعلمه، ونصحه بالبقاء لأخذ العلم، فترك ديوان الجند، وأقام الأوزاعي عنده مدة يكتب عنه، حتى عد الأوزاعي من أروى الناس عن يحيى بن أبي كثير وأكثرهم أخذاً عنه، كما سمع من غيره من مشايخ أهل اليمامة.
+ونظراً لرغبة يحيى بن أبي كثير في أن يزداد الأوزاعي علما نصحه أن يرحل إلى مواطن أخرى يأخذ العلم، وأرشده إلى الرحلة نحو البصرة ليسمع من الحسن البصري، ومحمد بن سيرين فسار إليهما ولكنه وجد الحسن قد مات منذ شهرين، وابن سيرين مريضا، فبقي يتردد عليه إلى أن مات ولم يسمع منه شيئا، غير أنه سمع من قتادة بن دعامة وغيره من علماء البصرة.
+قام الأوزاعي منذ صباه بعدة رحلات زادت من علمه وحلمه وصبره، فسافر إلى اليمامة ثم البصرة، والكوفة والعراق عامة ثم إلى الحجاز حيث الحج ومقابلة العلماء أمثال الثوري ومالك، وعاد إلى دمشق بعد هذه الجولة للدرس، فحدث بها وصار يُزار من قبل طلاب العلم.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+    <div class="title"> مذهبه
+</div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+كان الأوزاعي من كبار الأئمة الـمُدافعين عن الإسلام والسنة النبوية، لا سيما في فترة تزايد البدع والجدل والانحراف عن القرآن والسنة، كما كان حريصاً على الجهاد والرباط والدفاع عن المظلومين وعن الحق، وكان استقراره في ثغر بيروت أكثر سني حياته الـمُنتجة والغزيرة، ففيها طور مذهبه، وانتشر في كافة أنحاء الشام وانتقل إلى المغرب والأندلُس، لكن لم يُـكتب لمذهبه البقاء، فاندثر بعد أن لم يهتم تلامذته بتدوينه والحفاظ عليه، فحل مكانه المذهب الحنفي والشافعي في الشام والمالكي في المغرب والأندلس.
+يقول القاضي عياض: غَلَبَ مذهبُ الأوزاعي على الشام، وعلى جزيرة الأندلس أولاً، إلى أن غَلبَ عليها مذهبُ مالك بعد المائتين، فانقطع منها.
+ويقول ابن تيمية: ما زالوا – أي: أهل الشام – على مذهبه- أي الأوزاعي- إلى المائةِ الرابعة، بل أهلُ المغرب كانوا على مذهبه قبلَ أن يدخل إليهم مذهبُ مالك.
+ويقول الحافظ الذهبي: كان أهلُ الشام، ثم أهلُ الأندلس على مذهب الأوزاعي مدة من الدهر، ثم فَـنِـيَ العارفون به، وبقي منه ما يُوجدُ في كتب الخلاف.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+
+<div id="s5" class="section">
+    <div class="title">درر من أقواله
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+<pre>
+قال الوليد بن مزيد: سمعتُ الأوزاعي يقولُ: كان يُقالُ: ويلٌ للمتفقهينَ لغيرِ العبادةِ، والـمُستحِلينَ الـحُرماتِ بالشُبهاتِ.
+وعن الأوزاعي قال: إن المؤمن يقول قليلاً ويعمل كثيراً، وإن المنافق يقول كثيراً ويعمل قليلاً.
+وعن موسى بن أعين قال: قال لي الأوزاعي: يا أبا سعيد كنا نمزح ونضحك، فأما إذ صرنا يقتدى بنا ما أرى يسعنا إلا التبسم.
+وعن أبي حفص عمرو بن أبي سلمة عن الأوزاعي قال: من أكثر ذكر الموت كفاه اليسير، ومن علم أن منطقه من عمله قل كلامه.
+وعن الوليد بن مزيد قال: سمعت الأوزاعي يقول: إذا أراد الله بقوم شراً فتح عليهم باب الجدل، ومنعهم العمل، وكذلك العكس بالعكس، وإذا أراد بقوم خيراً فتح لهم باب العمل، وأغلق عنهم باب الجدل.
+وعن محمد بن شعيب قال: سمعت الأوزاعي يقول: من أخذ بنوادر العلماء خرج من الإسلام.
+وعن مروان الطاطري عن الإمام الأوزاعي أنه قال: من أطال قيام الليل؛ هون الله عليهِ وقوفَ يومِ القيامة.
+</pre>
+    </div>
+    <button class="doneBtn" onclick="mark(5)">أتممت القراءة</button>
+</div>
+
+<div id="s6" class="section">
+    <div class="title"> وفاته
+    </div>
+    <div class="contentText"><!-- اكتبي هنا -->
+توفي الأوزاعي في بيروت سنة 157 هــ، وكانت جنازته كبيرة، دُفن الأوزاعي في قرية "حنتوس" جنوب بيروت، ومع مُرور السنوات تغير اسم القرية حتى اصبحت تُعرف بـ"الأوزاعي"، وشكلت جزءا من بيروت الكبرى مع مرور الزمن.
+    </div>
+    <button class="doneBtn" onclick="mark(6)">أتممت القراءة</button>
+</div>
+
+
+</div>
+
+
+</div>
+
+<script>
+function show(id){
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+function mark(n){
+    document.getElementById('c' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

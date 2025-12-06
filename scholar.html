@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الإمام الزهري</title>
+<style>
+body { margin:0; background:#fdf6e3; font-family:'Amiri', serif; }
+.header { text-align:center; padding:25px; font-size:32px; color:#7a5c32; font-weight:bold; text-shadow: 1px 1px 5px rgba(0,0,0,0.2); }
+.container { display:flex; flex-wrap:wrap; }
+.sidebar {
+    width:260px;
+    background:#fff7eb;
+    padding:20px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.1);
+    min-height:100vh;
+    position:sticky;
+    top:0;
+}
+.sidebar button {
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    background:#c7a77a;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+.sidebar button:hover { background:#b8925f; }
+
+.content {
+    flex:1;
+    padding:30px;
+    min-height:100vh;
+}
+
+.section {
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    animation:fadeInSection 1s;
+}
+
+@keyframes fadeInSection { from{opacity:0} to{opacity:1} }
+
+.title { font-size:24px; font-weight:bold; color:#7a5c32; margin-bottom:15px; }
+
+.contentText {
+    font-size:18px;
+    line-height:1.7;
+    background:#fdf9f3;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #c7a77a;
+}
+
+.doneBtn {
+    background:#7a5c32;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timeline {
+    margin-bottom:25px;
+}
+.circle {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:#d0c4a6;
+    border-radius:50%;
+    margin-left:10px;
+}
+.active { background:#7a5c32 !important; }
+
+.photo {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:140px;
+    height:140px;
+    background:#e0d4bd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7a5c32;
+}
+
+.back {
+    margin-top:20px;
+    background:#c7a77a;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">الإمام الزهري</div>
+
+<div class="container">
+<div class="sidebar">
+ <button onclick="show('s1')">تعريف بسيط عنه</button>
+ <button onclick="show('s2')">علمه ومكانته</button>
+ <button onclick="show('s3')">طلابه</button>
+ <button onclick="show('s4')">مكانته وخصائصه</button>
+ 
+ <div class="back" onclick="location.href='authors.html'">رجوع</div>
+</div>
+
+<div class="content">
+
+<div class="timeline">
+    <span>تعريف</span><div id="c1" class="circle"></div>
+    <span>علمه</span><div id="c2" class="circle"></div>
+    <span>طلابه</span><div id="c3" class="circle"></div>
+    <span>مكانته</span><div id="c4" class="circle"></div>
+</div>
+
+<div id="s1" class="section">
+ <div class="title">تعريف بسيط عنه</div>
+ <div class="contentText">
+ <!-- اكتبي نص التعريف هنا -->
+محمد بن مسلم بن عبيد الله بن عبدالله بن شهاب بن عبدالله بن الحارث بن زهرة بن كلاب بن مرة بن كعب بن لؤي بن غالب، الإمام العلم، حافظ زمانه أبو بكر القرشي المدني نزيل الشام  </div>
+ <button class="doneBtn" onclick="mark(1)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+ <div class="title">علمه ومكانته</div>
+ <div class="contentText">
+ <!-- اكتبي نص علمه ومكانته هنا -->
+معروف بعلمه الواسع ومكانته الرفيعة، كان من أوائل من قام بتدوين العلم، واشتهر بقوة حفظه وذاكرته التي جمعت علوم الشريعة والقرآن والسنة وأنساب العرب، لقبه العلماء بـ " أجمع العلماء" لقدرته على استيعاب مختلف العلوم، وكان له دور بارز في نقل السنة النبوية وشرحها، مما جعله علماً بارزاً في عصره </div>
+ <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+
+<div id="s2" class="section">
+ <div class="title">شيوخه</div>
+ <div class="contentText">
+ <!-- اكتبي نص  شيوخه هنا -->
+تلقى الإمام الزهري العلم عن شيوخ كثيرين، أبرزهم الصحابة كأنس بن مالك وسهل بن سعد وعبدالله بن عمر، وكبار التابعين من فقهاء المدينة السبعة مثل سعيد بن المسيب وأبي سلمة بن عبدالرحمن، بالإضافة إلى أئمة آخرين مثل أبان بن عثمان بن عفان وإبراهيم بن عبدالله بن حنين <button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+<button class="doneBtn" onclick="mark(2)">أتممت القراءة</button>
+</div>
+<div id="s3" class="section">
+ <div class="title">طلابه</div>
+ <div class="contentText">
+ <!-- اكتبي نص تلاميذه هنا -->
+  من أشهرهم: مالك بن أنس، محمد بن إسحاق، عبدالرحمن الأوزاعي، معمر بن راشد، يونس بن يزيد، وقد قُسم تلامذته إلى طبقات حسب حفظهم وإتقانهم، منهم من طالت صحبته له مثل مالك، ومنهم من كانت صحبته قصيرة مثل الأوزاعي، ومنهم من كلام في حفظه مثل محمد بن إسحاق
+ </div>
+ <button class="doneBtn" onclick="mark(3)">أتممت القراءة</button>
+</div>
+
+<div id="s4" class="section">
+ <div class="title">مكانته وخصائصه</div>
+ <div class="contentText">
+ <!-- اكتبي نص مكانته هنا -->
+أبو صالح، عن الليث بن سعد، قال: ما رأيت عالماً قط أجمع من ابن شهاب، يحدث في الترغيب، فتقول: لا يحسن إلا هذا، وإن حدث عن العرب والأنساب، قلت: لا يحسن إلا هذا، وإن حدث عن القرآن والسنة، كان حديثه
+قال عمر بن عبدالعزيز لجلسائه: هل تأتون ابن شهاب؟ قالوا: إنا لنفعل، قال: فأتوه، فإنه لم يبق أحد أعلم بسنة ماضية منه، قال معمر: وإن الحسن ونظراءه لأحياء يومئذ
+وقال أحمد: الزهري أحسن الناس حديثا، وأجود الناس إسنادا
+وقال علي بن المديني: أعلم الناس بقول الفقهاء السبعة الزهري
+ </div>
+ <button class="doneBtn" onclick="mark(4)">أتممت القراءة</button>
+</div>
+<script>
+function show(id){
+ document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+ document.getElementById(id).style.display='block';
+}
+function mark(n){
+ document.getElementById('c'+n).classList.add('active');
+}
+</script>
+
+</body>
+</html>

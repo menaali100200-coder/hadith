@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>دُرَرُ السامعين</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+body {
+    margin:0;
+    background: linear-gradient(to bottom right, #fdf6e3, #f5efe4);
+    font-family: 'Amiri', serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+h1 {
+    font-size:60px;
+    color:#7a5c32;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    text-align:center;
+    margin:0 20px;
+    opacity:0;
+    animation:fadeIn 2s forwards;
+}
+
+.decor {
+    width:180px;
+    height:4px;
+    background:#c7a77a;
+    margin:20px auto 50px auto;
+    border-radius:2px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    opacity:0;
+    animation:slideDecor 2s forwards 1s;
+}
+
+button {
+    padding:18px 60px;
+    font-size:24px;
+    font-weight:bold;
+    background:#c7a77a;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    opacity:0;
+    transform:translateY(50px);
+    animation:slideButton 1.5s forwards 2s;
+}
+
+button:hover {
+    background:#b8925f;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* الحركات */
+@keyframes fadeIn {
+    to { opacity:1; }
+}
+
+@keyframes slideButton {
+    to { opacity:1; transform:translateY(0); }
+}
+
+@keyframes slideDecor {
+    to { opacity:1; transform:translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<h1>دُرَرُ السامعين<br>في تراجم المحدّثين</h1>
+<div class="decor"></div>
+<button onclick="location.href='authors.html'">أفتح الكنز</button>
+
+</body>
+</html>
